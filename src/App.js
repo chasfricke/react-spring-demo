@@ -1,18 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import AppTitle from './BasicSpring.jsx';
+import Toggle from './ToggleSpring.jsx';
+import IntToggle from './Interpolation.jsx';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="logo" />
-          <button className="menu-button">Menu</button>
-        </header>
-      </div>
-    );
-  }
-}
+const App = () => {
+
+  return (
+    <div className="App" >
+      <header className="App-header">
+       <AppTitle />
+      </header>
+      <Toggle />
+      <IntToggle />
+    </div>
+  );
+};
 
 export default App;

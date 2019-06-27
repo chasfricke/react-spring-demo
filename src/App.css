@@ -29,10 +29,21 @@ body {
 
 .App-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 0 5%;
+}
+
+.App-title {
+  padding: 16px;
+  font-size: 32px;
+}
+
+.Toggle-container {
+  padding: 16px;
+  background-color: blue;
 }
 
 .App-link {
@@ -72,6 +83,7 @@ body {
   background: transparent;
   border: none;
   z-index: 15;
+  margin-top: 50px;
 }
 
 h1 {
