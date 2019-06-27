@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
+import '../App.css';
+
 
 const IntToggle = () => {
   const [isToggled, setToggle] = useState(false);
@@ -11,6 +13,7 @@ const IntToggle = () => {
 
   return (
     <div>
+      <p>Interpolation</p>
       <animated.h1
         style={{
           transform: x.interpolate(x => `translate3d(${x}px, 0, 0)`),

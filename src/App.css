@@ -15,6 +15,10 @@
   --white: #fff;
 }
 
+a {
+  margin-top: 16px;
+}
+
 body {
   background-color: #282c34;
 }
@@ -44,6 +48,12 @@ body {
 .Toggle-container {
   padding: 16px;
   background-color: blue;
+}
+
+.UseTransition-container {
+  padding: 16px;
+  background-color: blue;
+  margin-top: 16px;
 }
 
 .App-link {

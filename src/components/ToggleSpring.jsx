@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import './App.css';
+import '../App.css';
 
 const Toggle = () => {
   const [isToggled, setToggle] = useState(false);
@@ -13,6 +13,7 @@ const Toggle = () => {
 
   return (
     <div className="Toggle-container">
+      <p>Toggle</p>
       <animated.h2 style={fade}>Here I Am</animated.h2>
       <button onClick={() => setToggle(!isToggled)}>Toggle</button>
     </div>
